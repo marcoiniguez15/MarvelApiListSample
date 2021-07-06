@@ -11,15 +11,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    window = UIWindow.init(frame: UIScreen.main.bounds)
-    let initialViewController = storyboard.instantiateViewController(withIdentifier: "VC")
-    window?.rootViewController = initialViewController
-    window?.makeKeyAndVisible()
+    setupRootViewController()
     return true
   }
-
+  
+  func setupRootViewController() {
+    let vc = CharactersListViewController(factory: AppInjector.CharactersListInjector(), mainView: CharactersListView.init(), dataSource: CharactersListModel.DataSource())
+    let navigationController = UINavigationController(rootViewController: vc)
+    window = UIWindow.init(frame: UIScreen.main.bounds)
+    window?.makeKeyAndVisible()
+    window?.rootViewController = navigationController
+  }
 
 }
 

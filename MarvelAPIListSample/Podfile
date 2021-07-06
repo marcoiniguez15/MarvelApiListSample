@@ -8,6 +8,7 @@ target 'MarvelAPIListSample' do
   # Pods for MarvelAPIListSample
   pod 'Alamofire', '5.4.0'
   pod 'Kingfisher'
+  pod 'R.swift'
 
 
   target 'MarvelAPIListSampleTests' do
