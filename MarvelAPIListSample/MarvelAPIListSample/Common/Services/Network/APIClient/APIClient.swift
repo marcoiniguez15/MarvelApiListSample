@@ -34,6 +34,9 @@ extension APIClient {
   func getCharactersList(page: Int, completion:@escaping (Result<CharactersList, NetworkError>, Int?) -> Void) {
     performRequest(route: .getCharactersList(page: page), completion: completion)
   }
+  func getCharacterDetail(id: Int, completion:@escaping (Result<CharactersList, NetworkError>, Int?) -> Void) {
+    performRequest(route: .getCharacterDetail(id: id), completion: completion)
+  }
 }
 
 // MARK: - Private

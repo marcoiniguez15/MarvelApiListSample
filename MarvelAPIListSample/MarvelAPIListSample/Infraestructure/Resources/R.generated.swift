@@ -130,12 +130,32 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 4 nibs.
   struct nib {
+    /// Nib `CharacterDetailTableViewCell`.
+    static let characterDetailTableViewCell = _R.nib._CharacterDetailTableViewCell()
+    /// Nib `CharacterDetailView`.
+    static let characterDetailView = _R.nib._CharacterDetailView()
     /// Nib `CharacterListTableViewCell`.
     static let characterListTableViewCell = _R.nib._CharacterListTableViewCell()
     /// Nib `CharactersListView`.
     static let charactersListView = _R.nib._CharactersListView()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CharacterDetailTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.characterDetailTableViewCell) instead")
+    static func characterDetailTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.characterDetailTableViewCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CharacterDetailView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.characterDetailView) instead")
+    static func characterDetailView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.characterDetailView)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "CharacterListTableViewCell", in: bundle)`
@@ -153,6 +173,14 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    static func characterDetailTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CharacterDetailTableViewCell? {
+      return R.nib.characterDetailTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CharacterDetailTableViewCell
+    }
+
+    static func characterDetailView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.characterDetailView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
     static func characterListTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CharacterListTableViewCell? {
       return R.nib.characterListTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CharacterListTableViewCell
     }
@@ -164,8 +192,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `CharacterDetailTableViewCell`.
+    static let characterDetailTableViewCell: Rswift.ReuseIdentifier<CharacterDetailTableViewCell> = Rswift.ReuseIdentifier(identifier: "CharacterDetailTableViewCell")
     /// Reuse identifier `CharacterListTableViewCell`.
     static let characterListTableViewCell: Rswift.ReuseIdentifier<CharacterListTableViewCell> = Rswift.ReuseIdentifier(identifier: "CharacterListTableViewCell")
 
@@ -194,6 +224,31 @@ struct _R: Rswift.Validatable {
 
   #if os(iOS) || os(tvOS)
   struct nib {
+    struct _CharacterDetailTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = CharacterDetailTableViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "CharacterDetailTableViewCell"
+      let name = "CharacterDetailTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CharacterDetailTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CharacterDetailTableViewCell
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _CharacterDetailView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CharacterDetailView"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
     struct _CharacterListTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = CharacterListTableViewCell
 

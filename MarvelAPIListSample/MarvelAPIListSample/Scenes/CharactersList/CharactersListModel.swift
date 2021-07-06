@@ -17,17 +17,26 @@ enum CharactersListModel {
   
   enum Request {
     case prepareCharactersList(page: Int)
+    case itemPressed(index: Int)
   }
   
   enum Response {
     case prepareCharactersList(data: [ResultList])
     case showError(model: ErrorModel)
+    case showDetail(id: Int)
   }
   
   enum ViewModel {
     case showError(model: ErrorModel)
     case prepareCharactersList(viewModelData: ViewDataSource)
+    case showDetail(id: Int)
   }
+  
+  enum Route {
+    case showCharacterDetail(id: Int)
+    case showError(model: ErrorModel)
+  }
+  
   struct ViewDataSource {
     let title: String
     let items: [CellModel]
@@ -37,10 +46,7 @@ enum CharactersListModel {
     let name: String
     let imageName: String?
   }
-  enum Route {
-    case showCharacterDetail(id: String)
-    case showError(model: ErrorModel)
-  }
+
   
   struct DataSource {
     var characterList: [ResultList] = []

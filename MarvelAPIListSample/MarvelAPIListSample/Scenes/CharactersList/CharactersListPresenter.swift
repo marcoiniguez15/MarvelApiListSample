@@ -37,6 +37,9 @@ extension CharactersListPresenter: CharactersListPresentationLogic {
       
     case let .showError(model):
       self.viewController?.displayViewModel(.showError(model: model))
+      
+    case let .showDetail(id):
+      self.viewController?.displayViewModel(.showDetail(id: id))
     }
   }
 }

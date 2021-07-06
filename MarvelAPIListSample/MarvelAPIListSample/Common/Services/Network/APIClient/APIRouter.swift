@@ -9,6 +9,7 @@ import Alamofire
 
 enum APIRouter {
   case getCharactersList(page: Int)
+  case getCharacterDetail(id: Int)
 }
 
 
@@ -23,7 +24,8 @@ private extension APIRouter {
   // MARK: - HTTPMethod
   var method: HTTPMethod {
     switch self {
-    case .getCharactersList:
+    case .getCharactersList,
+         .getCharacterDetail:
       return .get
     
     }
@@ -44,6 +46,16 @@ private extension APIRouter {
         + "&\(APIParameterKey.apiKey.rawValue)=\(publicKey)"
         + "&\(APIParameterKey.limit.rawValue)=\(limit)"
         + "&\(APIParameterKey.offset.rawValue)=\(offset)"
+      
+    case let .getCharacterDetail(id):
+      let timestamp = Int(Date().timeIntervalSince1970)
+      let publicKey = EnvironmentService.getValue(for: .URL(.publicKey))
+      let privateKey = EnvironmentService.getValue(for: .URL(.privateKey))
+      let hash = "\(timestamp)\(privateKey)\(publicKey)"
+      return "/v1/public/characters/\(id)" + "?\(APIParameterKey.timestamp.rawValue)=\(timestamp)"
+        + "&\(APIParameterKey.hash.rawValue)=\(hash.md5())"
+        + "&\(APIParameterKey.apiKey.rawValue)=\(publicKey)"
+       
 
     }
     
@@ -52,7 +64,8 @@ private extension APIRouter {
   // MARK: - Parameters
   var parameters: Parameters? {
     switch self {
-    case .getCharactersList:    
+    case .getCharactersList,
+         .getCharacterDetail:
       return nil
     }
   }
@@ -60,7 +73,8 @@ private extension APIRouter {
   // MARK: - ContentType
   var contentType: ContentType {
     switch self {
-    case .getCharactersList:
+    case .getCharactersList,
+         .getCharacterDetail:
       return .formUrlEncoded
     }
   }

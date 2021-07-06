@@ -62,16 +62,21 @@ extension CharactersListViewController: CharactersListDisplayLogic {
 
       case let .prepareCharactersList(viewModelData):
         self.navigationItem.title = viewModelData.title
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         self.mainView.updateDataSource(with: viewModelData)
         
       case let .showError(model):
         self.router.routeTo(.showError(model:model))
+        
+      case let .showDetail(id):
+        self.router.routeTo(.showCharacterDetail(id: id))
       }
     }
   }
   
   func errorRetryRequest() {
-    
+    self.mainView.retryRequest()
   }
 }
 
@@ -84,7 +89,7 @@ extension CharactersListViewController: CharactersListViewDelegate {
   
   
   func itemPressed(index: Int) {
-  
+    interactor.doRequest(.itemPressed(index: index))
   }
 }
 

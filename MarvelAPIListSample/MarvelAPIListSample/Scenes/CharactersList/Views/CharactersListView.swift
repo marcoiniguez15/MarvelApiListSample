@@ -46,6 +46,9 @@ final class CharactersListView: BaseView {
     self.charactersTableView.tableFooterView = UIView()
     self.charactersTableView.reloadData()
   }
+  func retryRequest() {
+    delegate?.nextPage(page: page)
+  }
   
 }
 

@@ -48,6 +48,11 @@ extension CharactersListInteractor: CharactersListBusinessLogic {
         
       case let .prepareCharactersList(page):
         self.prepareCharactersList(page: page)
+        
+      case let .itemPressed(index):
+        if let id = self.dataSource.characterList[index].id {
+          self.presenter.presentResponse(.showDetail(id: id))
+        }
       }
     }
   }
@@ -75,6 +80,5 @@ private extension CharactersListInteractor {
         self.presenter.presentResponse(.showError(model: errorModel))
       }
     }
-    
   }
 }
