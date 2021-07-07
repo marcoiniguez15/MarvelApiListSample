@@ -9,6 +9,10 @@ import Alamofire
 
 typealias NetworkError = AFError
 
+protocol APIClientProtocol {
+  func getCharactersList(page: Int, completion:@escaping (Result<CharactersList, NetworkError>, Int?) -> Void)
+  func getCharacterDetail(id: Int, completion:@escaping (Result<CharactersList, NetworkError>, Int?) -> Void)
+}
 final class APIClient {
   private static var instance: APIClient?
   static var shared: APIClient {
@@ -30,7 +34,7 @@ final class APIClient {
 }
 
 // MARK: - Public
-extension APIClient {
+extension APIClient: APIClientProtocol {
   func getCharactersList(page: Int, completion:@escaping (Result<CharactersList, NetworkError>, Int?) -> Void) {
     performRequest(route: .getCharactersList(page: page), completion: completion)
   }

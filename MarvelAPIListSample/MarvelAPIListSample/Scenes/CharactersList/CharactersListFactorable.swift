@@ -53,12 +53,12 @@ extension CharactersListFactorable {
 
 // MARK: - Service Factorable
 protocol CharactersListServicesFactorable {
-  func makeApiService() -> APIClient
+  func makeApiService() -> APIClientProtocol
 }
 
 extension CharactersListServicesFactorable {
   
-  func makeApiService() -> APIClient {
+  func makeApiService() -> APIClientProtocol {
     APIClient.shared
   }
 }

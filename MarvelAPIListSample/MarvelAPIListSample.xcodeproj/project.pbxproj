@@ -27,7 +27,6 @@
 		DB7D79C8268F120E004E3088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D79C7268F120E004E3088 /* AppDelegate.swift */; };
 		DB7D79D1268F1219004E3088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7D79D0268F1219004E3088 /* Assets.xcassets */; };
 		DB7D79D4268F1219004E3088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7D79D2268F1219004E3088 /* LaunchScreen.storyboard */; };
-		DB7D79DF268F121A004E3088 /* MarvelAPIListSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D79DE268F121A004E3088 /* MarvelAPIListSampleTests.swift */; };
 		DB7D79EA268F121A004E3088 /* MarvelAPIListSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D79E9268F121A004E3088 /* MarvelAPIListSampleUITests.swift */; };
 		DB7D7A23268F1A28004E3088 /* AppInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D7A22268F1A28004E3088 /* AppInjector.swift */; };
 		DB7D7A2C268F1ACA004E3088 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D7A2B268F1ACA004E3088 /* BaseViewController.swift */; };
@@ -61,6 +60,13 @@
 		DB8ACCA926946ECD00ACC425 /* CharacterDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8ACCA826946ECD00ACC425 /* CharacterDetailView.xib */; };
 		DB8ACCB02694725200ACC425 /* CharacterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8ACCAE2694725200ACC425 /* CharacterDetailTableViewCell.swift */; };
 		DB8ACCB12694725200ACC425 /* CharacterDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8ACCAF2694725200ACC425 /* CharacterDetailTableViewCell.xib */; };
+		DB8ACCBB26947B0C00ACC425 /* CharactersListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8ACCB726947B0C00ACC425 /* CharactersListViewControllerTests.swift */; };
+		DB8ACCBC26947B0C00ACC425 /* CharactersListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8ACCB826947B0C00ACC425 /* CharactersListInteractorTests.swift */; };
+		DB8ACCBD26947B0C00ACC425 /* CharactersListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8ACCB926947B0C00ACC425 /* CharactersListRouterTests.swift */; };
+		DB8ACCBE26947B0C00ACC425 /* CharactersListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8ACCBA26947B0C00ACC425 /* CharactersListPresenterTests.swift */; };
+		DB8ACCC8269486C500ACC425 /* charactersList.json in Resources */ = {isa = PBXBuildFile; fileRef = DB8ACCC7269486C500ACC425 /* charactersList.json */; };
+		DB8ACCC9269486C500ACC425 /* charactersList.json in Resources */ = {isa = PBXBuildFile; fileRef = DB8ACCC7269486C500ACC425 /* charactersList.json */; };
+		DB8ACCE02695C57800ACC425 /* String+AdditionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8ACCDF2695C57800ACC425 /* String+AdditionsTests.swift */; };
 		DBC0D4D626930D3800853CE8 /* EnviromentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0D4D526930D3800853CE8 /* EnviromentService.swift */; };
 		EE9CF198366CC4B04FA648FE /* Pods_MarvelAPIListSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3A859DCECD63696A763120 /* Pods_MarvelAPIListSampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -113,7 +119,6 @@
 		DB7D79D3268F1219004E3088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB7D79D5268F1219004E3088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7D79DA268F1219004E3088 /* MarvelAPIListSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAPIListSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB7D79DE268F121A004E3088 /* MarvelAPIListSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIListSampleTests.swift; sourceTree = "<group>"; };
 		DB7D79E0268F121A004E3088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7D79E5268F121A004E3088 /* MarvelAPIListSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAPIListSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7D79E9268F121A004E3088 /* MarvelAPIListSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIListSampleUITests.swift; sourceTree = "<group>"; };
@@ -152,6 +157,12 @@
 		DB8ACCA826946ECD00ACC425 /* CharacterDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailView.xib; sourceTree = "<group>"; };
 		DB8ACCAE2694725200ACC425 /* CharacterDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DB8ACCAF2694725200ACC425 /* CharacterDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailTableViewCell.xib; sourceTree = "<group>"; };
+		DB8ACCB726947B0C00ACC425 /* CharactersListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewControllerTests.swift; sourceTree = "<group>"; };
+		DB8ACCB826947B0C00ACC425 /* CharactersListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListInteractorTests.swift; sourceTree = "<group>"; };
+		DB8ACCB926947B0C00ACC425 /* CharactersListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRouterTests.swift; sourceTree = "<group>"; };
+		DB8ACCBA26947B0C00ACC425 /* CharactersListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenterTests.swift; sourceTree = "<group>"; };
+		DB8ACCC7269486C500ACC425 /* charactersList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = charactersList.json; sourceTree = "<group>"; };
+		DB8ACCDF2695C57800ACC425 /* String+AdditionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AdditionsTests.swift"; sourceTree = "<group>"; };
 		DBC0D4D526930D3800853CE8 /* EnviromentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentService.swift; sourceTree = "<group>"; };
 		EBE568F9C934A2C8F5B2C819 /* Pods-MarvelAPIListSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAPIListSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-MarvelAPIListSampleUITests/Pods-MarvelAPIListSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F93813A8612FF1E3FC78AF9B /* Pods_MarvelAPIListSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelAPIListSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,7 +292,8 @@
 		DB7D79DD268F1219004E3088 /* MarvelAPIListSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				DB7D79DE268F121A004E3088 /* MarvelAPIListSampleTests.swift */,
+				DB8ACCDD2695C52B00ACC425 /* Common */,
+				DB8ACCC226947B3100ACC425 /* CharactersListTests */,
 				DB7D79E0268F121A004E3088 /* Info.plist */,
 			);
 			path = MarvelAPIListSampleTests;
@@ -385,6 +397,7 @@
 		DB7D7A43268F1C0E004E3088 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DB8ACCC62694863A00ACC425 /* Mocks */,
 				DB7D7A4B2693005F004E3088 /* Models */,
 				DB7D7A4A26930041004E3088 /* APIClient */,
 				DB34960526930EB500442F6B /* CustomNetworkError.swift */,
@@ -477,6 +490,41 @@
 				DB8ACCAF2694725200ACC425 /* CharacterDetailTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DB8ACCC226947B3100ACC425 /* CharactersListTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB8ACCB726947B0C00ACC425 /* CharactersListViewControllerTests.swift */,
+				DB8ACCB826947B0C00ACC425 /* CharactersListInteractorTests.swift */,
+				DB8ACCB926947B0C00ACC425 /* CharactersListRouterTests.swift */,
+				DB8ACCBA26947B0C00ACC425 /* CharactersListPresenterTests.swift */,
+			);
+			path = CharactersListTests;
+			sourceTree = "<group>";
+		};
+		DB8ACCC62694863A00ACC425 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DB8ACCC7269486C500ACC425 /* charactersList.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		DB8ACCDD2695C52B00ACC425 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB8ACCDE2695C53300ACC425 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB8ACCDE2695C53300ACC425 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB8ACCDF2695C57800ACC425 /* String+AdditionsTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -590,6 +638,7 @@
 				DB7D79D4268F1219004E3088 /* LaunchScreen.storyboard in Resources */,
 				DB7D79D1268F1219004E3088 /* Assets.xcassets in Resources */,
 				DB8ACCB12694725200ACC425 /* CharacterDetailTableViewCell.xib in Resources */,
+				DB8ACCC8269486C500ACC425 /* charactersList.json in Resources */,
 				DB349660269328A200442F6B /* CharactersListView.xib in Resources */,
 				DB34963826931BC600442F6B /* CharacterListTableViewCell.xib in Resources */,
 				DB8ACCA926946ECD00ACC425 /* CharacterDetailView.xib in Resources */,
@@ -600,6 +649,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8ACCC9269486C500ACC425 /* charactersList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,7 +825,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB7D79DF268F121A004E3088 /* MarvelAPIListSampleTests.swift in Sources */,
+				DB8ACCBE26947B0C00ACC425 /* CharactersListPresenterTests.swift in Sources */,
+				DB8ACCE02695C57800ACC425 /* String+AdditionsTests.swift in Sources */,
+				DB8ACCBB26947B0C00ACC425 /* CharactersListViewControllerTests.swift in Sources */,
+				DB8ACCBC26947B0C00ACC425 /* CharactersListInteractorTests.swift in Sources */,
+				DB8ACCBD26947B0C00ACC425 /* CharactersListRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

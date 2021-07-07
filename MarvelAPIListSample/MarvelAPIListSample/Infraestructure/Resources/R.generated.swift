@@ -130,6 +130,20 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.file` struct is generated, and contains static references to 1 files.
+  struct file {
+    /// Resource file `charactersList.json`.
+    static let charactersListJson = Rswift.FileResource(bundle: R.hostingBundle, name: "charactersList", pathExtension: "json")
+
+    /// `bundle.url(forResource: "charactersList", withExtension: "json")`
+    static func charactersListJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.charactersListJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.nib` struct is generated, and contains static references to 4 nibs.
   struct nib {
     /// Nib `CharacterDetailTableViewCell`.

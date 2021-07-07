@@ -63,7 +63,6 @@ extension CharactersListViewController: CharactersListDisplayLogic {
       case let .prepareCharactersList(viewModelData):
         self.navigationItem.title = viewModelData.title
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-
         self.mainView.updateDataSource(with: viewModelData)
         
       case let .showError(model):

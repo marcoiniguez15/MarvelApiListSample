@@ -18,7 +18,6 @@ extension String {
                 CC_MD5(messageBytes, CC_LONG(messageData.count), digestBytes)
             }
         }
-
         return digestData.map { String(format: "%02hhx", $0) }.joined()
     }
 }
