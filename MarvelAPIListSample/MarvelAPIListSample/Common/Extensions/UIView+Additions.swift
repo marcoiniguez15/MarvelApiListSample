@@ -23,7 +23,6 @@ private extension UIView {
   func loadViewFromNib() -> UIView {
     let bundle = Bundle(for: type(of: self))
     let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
-    // swiftlint:disable:next force_cast
     let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
     
     return nibView
