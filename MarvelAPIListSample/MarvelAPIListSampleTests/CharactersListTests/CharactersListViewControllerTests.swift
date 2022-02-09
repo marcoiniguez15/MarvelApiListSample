@@ -58,6 +58,7 @@ extension CharactersListViewControllerTests {
   func testPrepareCharactersList() {
     let testViewData = CharactersListModel.ViewDataSource(title: "Title", items: [])
     viewController.displayViewModel(.prepareCharactersList(viewModelData: testViewData))
+    
   }
 }
 
