@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.4.0)
+  - Kingfisher (6.1.0)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.4.0)
+  - Kingfisher
+  - R.swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - R.swift
+    - R.swift.Library
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  Kingfisher: f5d8d60a0ef3edd642fd781bae60918599901aff
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+
+PODFILE CHECKSUM: d012886e82245173a6ebb9b6d0389fb636ae5dd1
+
+COCOAPODS: 1.8.4
