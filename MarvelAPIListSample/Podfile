@@ -16,9 +16,5 @@ target 'MarvelAPIListSample' do
     # Pods for testing
   end
 
-  target 'MarvelAPIListSampleUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end
