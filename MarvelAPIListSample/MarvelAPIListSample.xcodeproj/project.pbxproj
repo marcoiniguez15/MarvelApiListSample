@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		45606B4164FF31B67B4FE119 /* Pods_MarvelAPIListSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909A5B379E374782D7242860 /* Pods_MarvelAPIListSample.framework */; };
-		C391D4DF764499F884B99B39 /* Pods_MarvelAPIListSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93813A8612FF1E3FC78AF9B /* Pods_MarvelAPIListSampleUITests.framework */; };
 		DB34960626930EB500442F6B /* CustomNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB34960526930EB500442F6B /* CustomNetworkError.swift */; };
 		DB34961E269310F100442F6B /* Dictionary+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB34961D269310F100442F6B /* Dictionary+Additions.swift */; };
 		DB34962926931B1D00442F6B /* CharactersListFactorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB34962226931B1D00442F6B /* CharactersListFactorable.swift */; };
@@ -27,7 +26,6 @@
 		DB7D79C8268F120E004E3088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D79C7268F120E004E3088 /* AppDelegate.swift */; };
 		DB7D79D1268F1219004E3088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7D79D0268F1219004E3088 /* Assets.xcassets */; };
 		DB7D79D4268F1219004E3088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7D79D2268F1219004E3088 /* LaunchScreen.storyboard */; };
-		DB7D79EA268F121A004E3088 /* MarvelAPIListSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D79E9268F121A004E3088 /* MarvelAPIListSampleUITests.swift */; };
 		DB7D7A23268F1A28004E3088 /* AppInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D7A22268F1A28004E3088 /* AppInjector.swift */; };
 		DB7D7A2C268F1ACA004E3088 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D7A2B268F1ACA004E3088 /* BaseViewController.swift */; };
 		DB7D7A34268F1AD5004E3088 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D7A33268F1AD5004E3088 /* BaseView.swift */; };
@@ -79,13 +77,6 @@
 			remoteGlobalIDString = DB7D79C3268F120E004E3088;
 			remoteInfo = MarvelAPIListSample;
 		};
-		DB7D79E6268F121A004E3088 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB7D79BC268F120E004E3088 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DB7D79C3268F120E004E3088;
-			remoteInfo = MarvelAPIListSample;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -120,9 +111,6 @@
 		DB7D79D5268F1219004E3088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7D79DA268F1219004E3088 /* MarvelAPIListSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAPIListSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7D79E0268F121A004E3088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB7D79E5268F121A004E3088 /* MarvelAPIListSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAPIListSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB7D79E9268F121A004E3088 /* MarvelAPIListSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIListSampleUITests.swift; sourceTree = "<group>"; };
-		DB7D79EB268F121A004E3088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7D7A22268F1A28004E3088 /* AppInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInjector.swift; sourceTree = "<group>"; };
 		DB7D7A2B268F1ACA004E3088 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DB7D7A33268F1AD5004E3088 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -182,14 +170,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9CF198366CC4B04FA648FE /* Pods_MarvelAPIListSampleTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB7D79E2268F121A004E3088 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C391D4DF764499F884B99B39 /* Pods_MarvelAPIListSampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +241,6 @@
 			children = (
 				DB7D79C6268F120E004E3088 /* MarvelAPIListSample */,
 				DB7D79DD268F1219004E3088 /* MarvelAPIListSampleTests */,
-				DB7D79E8268F121A004E3088 /* MarvelAPIListSampleUITests */,
 				DB7D79C5268F120E004E3088 /* Products */,
 				9271F7D14527AA96320D916E /* Pods */,
 				047AEE200BA6160FC333536D /* Frameworks */,
@@ -273,7 +252,6 @@
 			children = (
 				DB7D79C4268F120E004E3088 /* MarvelAPIListSample.app */,
 				DB7D79DA268F1219004E3088 /* MarvelAPIListSampleTests.xctest */,
-				DB7D79E5268F121A004E3088 /* MarvelAPIListSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,15 +275,6 @@
 				DB7D79E0268F121A004E3088 /* Info.plist */,
 			);
 			path = MarvelAPIListSampleTests;
-			sourceTree = "<group>";
-		};
-		DB7D79E8268F121A004E3088 /* MarvelAPIListSampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DB7D79E9268F121A004E3088 /* MarvelAPIListSampleUITests.swift */,
-				DB7D79EB268F121A004E3088 /* Info.plist */,
-			);
-			path = MarvelAPIListSampleUITests;
 			sourceTree = "<group>";
 		};
 		DB7D7A1E268F19A6004E3088 /* Infraestructure */ = {
@@ -569,25 +538,6 @@
 			productReference = DB7D79DA268F1219004E3088 /* MarvelAPIListSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DB7D79E4268F121A004E3088 /* MarvelAPIListSampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB7D79F4268F121A004E3088 /* Build configuration list for PBXNativeTarget "MarvelAPIListSampleUITests" */;
-			buildPhases = (
-				DA1F3C8C7D7E3B79031D504A /* [CP] Check Pods Manifest.lock */,
-				DB7D79E1268F121A004E3088 /* Sources */,
-				DB7D79E2268F121A004E3088 /* Frameworks */,
-				DB7D79E3268F121A004E3088 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DB7D79E7268F121A004E3088 /* PBXTargetDependency */,
-			);
-			name = MarvelAPIListSampleUITests;
-			productName = MarvelAPIListSampleUITests;
-			productReference = DB7D79E5268F121A004E3088 /* MarvelAPIListSampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -601,10 +551,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					DB7D79D9268F1219004E3088 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = DB7D79C3268F120E004E3088;
-					};
-					DB7D79E4268F121A004E3088 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = DB7D79C3268F120E004E3088;
 					};
@@ -625,7 +571,6 @@
 			targets = (
 				DB7D79C3268F120E004E3088 /* MarvelAPIListSample */,
 				DB7D79D9268F1219004E3088 /* MarvelAPIListSampleTests */,
-				DB7D79E4268F121A004E3088 /* MarvelAPIListSampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -653,13 +598,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB7D79E3268F121A004E3088 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -679,28 +617,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MarvelAPIListSampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DA1F3C8C7D7E3B79031D504A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MarvelAPIListSampleUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -833,14 +749,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB7D79E1268F121A004E3088 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB7D79EA268F121A004E3088 /* MarvelAPIListSampleUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -848,11 +756,6 @@
 			isa = PBXTargetDependency;
 			target = DB7D79C3268F120E004E3088 /* MarvelAPIListSample */;
 			targetProxy = DB7D79DB268F1219004E3088 /* PBXContainerItemProxy */;
-		};
-		DB7D79E7268F121A004E3088 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DB7D79C3268F120E004E3088 /* MarvelAPIListSample */;
-			targetProxy = DB7D79E6268F121A004E3088 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1072,48 +975,6 @@
 			};
 			name = Release;
 		};
-		DB7D79F5268F121A004E3088 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBE568F9C934A2C8F5B2C819 /* Pods-MarvelAPIListSampleUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8NX33F6527;
-				INFOPLIST_FILE = MarvelAPIListSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MarcoIO.MarvelAPIListSampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MarvelAPIListSample;
-			};
-			name = Debug;
-		};
-		DB7D79F6268F121A004E3088 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9B17AE28BF8930D7C2639C8 /* Pods-MarvelAPIListSampleUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8NX33F6527;
-				INFOPLIST_FILE = MarvelAPIListSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MarcoIO.MarvelAPIListSampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MarvelAPIListSample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1140,15 +1001,6 @@
 			buildConfigurations = (
 				DB7D79F2268F121A004E3088 /* Debug */,
 				DB7D79F3268F121A004E3088 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB7D79F4268F121A004E3088 /* Build configuration list for PBXNativeTarget "MarvelAPIListSampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB7D79F5268F121A004E3088 /* Debug */,
-				DB7D79F6268F121A004E3088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
